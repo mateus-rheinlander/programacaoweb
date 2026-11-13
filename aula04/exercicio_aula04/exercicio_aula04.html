@@ -1,0 +1,121 @@
+<!-- Lista de Exercícios Práticos da Aula 04 (Estrutura, Textos e Listas) -->
+<!DOCTYPE html>
+
+<!-- Documento em Português do Brasil -->
+<html lang="pt-BR">
+
+<!-- Cabeçalho de configurações da página -->
+<head>
+    <!-- Suporte a caracteres acentuados -->
+    <meta charset="UTF-8">
+
+    <!-- Título da aba do navegador -->
+    <title>Exercícios Práticos — Aula 04 (Técnico em Informática)</title>
+
+    <!-- CSS pequeno, simples e todo comentado para iniciantes -->
+    <style>
+        /* Estilo geral da página */
+        body {
+            background-color: #F4F7FA; /* Cor de fundo clara */
+            color: #1B2A4A;            /* Cor do texto azul-marinho */
+            font-family: Calibri, sans-serif; /* Fonte para o texto */
+            font-size: 18px;           /* Tamanho base de 18px */
+        }
+
+        /* Estilo do título principal h1 */
+        h1 {
+            background-color: #1B2A4A; /* Fundo azul-marinho */
+            color: #FFFFFF;            /* Letra branca */
+            font-family: Cambria, serif; /* Fonte Cambria nos títulos */
+            text-align: center;        /* Centraliza o título */
+            border: 3px solid #F2A541; /* Borda âmbar */
+        }
+
+        /* Estilo dos subtítulos h2 e h3 */
+        h2, h3 {
+            color: #0F8B8D;            /* Cor verde-azulado */
+            font-family: Cambria, serif; /* Fonte Cambria */
+        }
+
+        /* Caixa branca para separar cada exercício */
+        .caixa {
+            background-color: #FFFFFF; /* Fundo branco */
+            border: 2px solid #0F8B8D; /* Borda verde-azulado */
+        }
+    </style>
+</head>
+
+<!-- Corpo visível da página -->
+<body>
+
+    <!-- Título principal com id="topo" para âncora -->
+    <h1 id="topo">Lista de Exercícios — Aula 04 (Curso Técnico em Informática)</h1>
+
+    <!-- Menu simples de navegação por âncoras -->
+    <p style="text-align: center; background-color: #E0F2F1; border: 1px solid #0F8B8D;">
+        <a href="../index.html">← Voltar para a Aula 04</a> |
+        <a href="#ex1">Exercício 1</a> |
+        <a href="#ex2">Exercício 2</a> |
+        <a href="#ex3">Exercício 3</a> |
+        <a href="../desafio/desafio-receita.html">Ir para o Desafio da Aula 04 →</a>
+    </p>
+
+    <!-- EXERCÍCIO 1 -->
+    <div class="caixa" id="ex1">
+        <h2>Exercício 1: Estrutura Mínima de um Documento HTML</h2>
+        <p><strong>Objetivo:</strong> Fixar o esqueleto obrigatório de todo arquivo HTML5 e o título da aba.</p>
+        <p>
+            <strong>Enunciado:</strong> Crie um arquivo chamado <code>exercicio-01.html</code> com a estrutura mínima do HTML5. O título da aba deve ser <strong>"Meu Primeiro Documento HTML"</strong> e o corpo deve ter um <code>&lt;h1&gt;</code> e um <code>&lt;p&gt;</code> apresentando sua turma no Curso Técnico em Informática.
+        </p>
+        <h3>Checklist de Conclusão:</h3>
+        <ul>
+            <li>[ ] Começou com <code>&lt;!DOCTYPE html&gt;</code> e <code>&lt;html lang="pt-BR"&gt;</code>.</li>
+            <li>[ ] Colocou <code>&lt;meta charset="UTF-8"&gt;</code> e <code>&lt;title&gt;</code> dentro do <code>&lt;head&gt;</code>.</li>
+            <li>[ ] Criou um <code>&lt;h1&gt;</code> e um <code>&lt;p&gt;</code> dentro do <code>&lt;body&gt;</code>.</li>
+        </ul>
+        <p><a href="gabarito/exercicio-01.html">Ver Gabarito do Exercício 1</a></p>
+    </div>
+
+    <br>
+
+    <!-- EXERCÍCIO 2 -->
+    <div class="caixa" id="ex2">
+        <h2>Exercício 2: Página de Receita com Títulos e Parágrafos</h2>
+        <p><strong>Objetivo:</strong> Usar <code>h1</code>, <code>h2</code>, <code>p</code>, <code>br</code>, <code>strong</code> e <code>em</code>.</p>
+        <p>
+            <strong>Enunciado:</strong> Crie o arquivo <code>exercicio-02.html</code> sobre uma receita simples (ex.: <em>Bolo de Cenoura</em>). Use um único <code>&lt;h1&gt;</code> com o nome da receita, subtítulos <code>&lt;h2&gt;</code>, parágrafos com palavras em <code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code>, e quebras de linha <code>&lt;br&gt;</code> para tempo de preparo e rendimento.
+        </p>
+        <h3>Checklist de Conclusão:</h3>
+        <ul>
+            <li>[ ] Usou apenas um único <code>&lt;h1&gt;</code> na página.</li>
+            <li>[ ] Criou subtítulos <code>&lt;h2&gt;</code> sem pular níveis de hierarquia.</li>
+            <li>[ ] Usou <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> e <code>&lt;br&gt;</code> dentro dos parágrafos.</li>
+        </ul>
+        <p><a href="gabarito/exercicio-02.html">Ver Gabarito do Exercício 2</a></p>
+    </div>
+
+    <br>
+
+    <!-- EXERCÍCIO 3 -->
+    <div class="caixa" id="ex3">
+        <h2>Exercício 3: Lista de Ingredientes (ul) e Modo de Preparo (ol)</h2>
+        <p><strong>Objetivo:</strong> Praticar listas não ordenadas (<code>ul</code>), ordenadas (<code>ol</code> com <code>type</code> e <code>start</code>) e aninhadas.</p>
+        <p>
+            <strong>Enunciado:</strong> Crie o arquivo <code>exercicio-03.html</code> adicionando à receita uma lista não ordenada (<code>&lt;ul&gt;</code>) com subgrupos aninhados ("Massa" e "Cobertura") e uma lista ordenada (<code>&lt;ol&gt;</code>) com o passo a passo do preparo.
+        </p>
+        <h3>Checklist de Conclusão:</h3>
+        <ul>
+            <li>[ ] Criou uma <code>&lt;ul&gt;</code> aninhada (uma <code>&lt;ul&gt;</code> dentro de um <code>&lt;li&gt;</code>).</li>
+            <li>[ ] Criou uma <code>&lt;ol&gt;</code> para o modo de preparo e testou o atributo <code>type="A"</code>.</li>
+            <li>[ ] Fechou todas as tags <code>&lt;li&gt;</code> corretamente.</li>
+        </ul>
+        <p><a href="gabarito/exercicio-03.html">Ver Gabarito do Exercício 3</a></p>
+    </div>
+
+    <!-- Rodapé simples -->
+    <p style="text-align: center;">
+        <a href="#topo">Voltar ao topo ↑</a> | <a href="../index.html">Voltar para a Página Principal da Aula 04</a>
+    </p>
+
+</body>
+</html>
